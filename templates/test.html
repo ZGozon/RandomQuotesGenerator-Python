@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% block body %}
+
+ <div class="bg">
+<div class="block1">
+	<br><br><br>
+<h1>Hello {{name}}!</h1>
+ 
+
+
+
+
+
+
+
+
+
+
+
+<div class="container"><div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center">
+        <span>Random Quotes</span> 
+        <em>for</em> 
+        <strong>You</strong>
+      </h1>  
+    </div>
+    <div class="col-md-12">
+      <blockquote class="Quote">
+        <p>{{quote}}</p>
+       
+      </blockquote>
+    </div>
+    <div class="col-md-12">
+      <ul class="Button row">
+        <li class="Button-item col-md-6 col-xs-6">
+          <button id="genBtn" class="btn-lg btn-success" onClick="window.location.reload()">New Quote</button>
+        </li>
+        <li class="Buttons-item col-md-6 col-xs-6">
+          <a id="shareBtn" target="_blank" class="btn-lg btn-primary twitter-share-button" href="https://twitter.com"
+        data-size="large">
+      Tweet Quote</a>
+        </li>
+
+      </ul>  
+    </div>
+
+  </div>
+</div>
+</div>
+{% endblock %}
+
